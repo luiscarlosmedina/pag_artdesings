@@ -1,19 +1,28 @@
 :root {
-  --bg: #3C465C;
-  --primary: #AD04B2;
-  --solid: #fff;
-  --btn-w: 10em;
-  --dot-w: calc(var(--btn-w)*.2);
-  --tr-X: calc(var(--btn-w) - var(--dot-w));
+	--bg: #3C465C;
+	--primary: #AD04B2;
+	--solid: #fff;
+	--btn-w: 10em;
+	--dot-w: calc(var(--btn-w)*.2);
+	--tr-X: calc(var(--btn-w) - var(--dot-w));
 }
+
 @font-face {
-    font-family: 'Venus';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Venus'), url("../fuentes/venus_rising/venus.woff") format('woff');
-    }
-* {box-sizing: border-box;}
-*:before, *:after {box-sizing: border-box;}
+	font-family: 'Venus';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Venus'), url("../fuentes/venus_rising/venus.woff") format('woff');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 body {
 	background: black;
 	color: white;
@@ -32,6 +41,7 @@ body {
 	height: 60px;
 	margin: 5px;
 }
+
 .navegador {
 	align-items: center;
 	display: flex;
@@ -42,9 +52,10 @@ body {
 	width: 100%;
 	position: fixed;
 	z-index: 1;
-    border-bottom: 3px solid #AD04B2;
+	border-bottom: 3px solid #AD04B2;
 }
-.menu{
+
+.menu {
 	padding-right: 2rem;
 }
 
@@ -57,9 +68,9 @@ body {
 }
 
 .navegador .menu .menu-lista .menu-item .menu-link {
-	font-size: 10px;
-    font-weight: bold;
-    font-family: "venus";
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "venus";
 	margin-right: 1.25rem;
 	text-decoration: none;
 	box-sizing: border-box;
@@ -79,6 +90,7 @@ body {
 .navegador .menu .menu-lista .menu-item .menu-link:hover {
 	text-shadow: 0 0 10px #AD04B2, 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #AD04B2, 0 0 70px #AD04B2, 0 0 80px #AD04B2, 0 0 100px #AD04B2;
 }
+
 .banner {
 	background: url("../img/banner.png") no-repeat center/cover;
 	height: calc(100vh - 17px);
@@ -101,12 +113,12 @@ body {
 	padding: 3rem;
 }
 
-.sec_title{
+.sec_title {
 	padding: 2rem;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
-    font-family: 'Venus';
+	font-family: 'Venus';
 }
 
 .text_h {
@@ -117,7 +129,7 @@ body {
 
 .text_h>p {
 	padding-bottom: 1em;
-    font-family: 'Rajdhani', sans-serif;
+	font-family: 'Rajdhani', sans-serif;
 }
 
 .about_img {
@@ -132,14 +144,16 @@ body {
 	border: 0 0 1px 1px solid #AD04B2;
 	box-shadow: 3px 3px 10px 7px rgba(236, 5, 236, 0.278)
 }
-.proyectos{
+
+.proyectos {
 	display: flex;
 	flex-direction: column;
 	background: url("../img/proyecto.jpg ") no-repeat center/cover;
 	width: 100%;
 	height: 100vh
 }
-.titulo_p{
+
+.titulo_p {
 	display: flex;
 	justify-content: center;
 	padding: 10px 0;
@@ -148,13 +162,15 @@ body {
 	border-radius: 0 0 50px 50px;
 	background: rgba(0, 0, 0, 0.736);
 }
-.t_prin{
+
+.t_prin {
 	border-color: #AD04B2;
 	font-family: 'Venus';
 	font-weight: bold;
 	font-size: 30px;
 }
-.content_p{
+
+.content_p {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -163,39 +179,47 @@ body {
 	padding: 2rem;
 
 }
-.tarjeta{
-	max-width:290px;
+
+.tarjeta {
+	max-width: 290px;
 	background: #000000b5;
 	border-radius: 25px;
 	margin: 1rem;
 	box-shadow: 0 0 12px #AD04B2;
 }
-.tarjeta>img{
+
+.tarjeta>img {
 	max-width: 100%;
 }
-.head_tj>img{
+
+.head_tj>img {
 	border-radius: 25px 25px 0 0;
 	max-height: 200px;
 	height: 170px;
 	width: 100%;
 }
-.footer_tj{
+
+.footer_tj {
 	padding: 0 1rem;
 }
-.tex_tj{
+
+.tex_tj {
 	padding: 10px;
 }
-.tex_tj>h3{
+
+.tex_tj>h3 {
 	font-family: "venus";
 	font-size: 18px;
 	padding: 3px;
 }
-.tex_tj>p{
+
+.tex_tj>p {
 	font-family: 'Rajdhani', sans-serif;
 	padding: 8px;
 	margin-top: 5px;
 	background: rgba(0, 0, 0, 0.541);
 }
+
 .btn {
 	font-family: "venus";
 	box-sizing: border-box;
@@ -209,8 +233,8 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-align-self: center;
-		-ms-flex-item-align: center;
-			align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
 	font-weight: 400;
 	line-height: 1;
 	margin: 20px auto;
@@ -221,10 +245,13 @@ body {
 	font-family: "venus";
 	font-weight: 500;
 }
-.btn:hover, .btn:focus {
+
+.btn:hover,
+.btn:focus {
 	color: #fff;
 	outline: 0;
 }
+
 .third {
 	border-color: #AD04B2;
 	color: #fff;
@@ -232,43 +259,78 @@ body {
 	-webkit-transition: all 150ms ease-in-out;
 	transition: all 150ms ease-in-out;
 }
-  .third:hover {
+
+.third:hover {
 	box-shadow: 0 0 10px 0 #AD04B2 inset, 0 0 10px 4px #AD04B2;
 }
-.equipo{
+
+.equipo {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	height: 100vh;
 }
-.per_eq{
-	display: flex;
-    flex-direction: row;
-    margin: 30px;
-    
-}
-.form{
+
+.per_eq {
 	display: flex;
 	flex-direction: row;
+	margin: 30px;
+
 }
-.img_form{
-	width: 70%;
-}
-.img_form>img{
-	width: 100%;
-	height: 600px;
-}
-.form_cont{
+
+.team-container {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
-	padding: 50px;
-	width: 70%;
+	align-items: center;
+	width: 100%;
 }
-.form_cont>label{
-	margin: 10px;
-	font-size: 12px;
-	font-family: "venus";
+
+.team-member {
+	margin: 20px;
+	text-align: center;
 }
-.form_cont>input{
-	padding: 20px;
+
+.team-member img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.team-member h3 {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.social-links {
+	margin-top: 10px;
+}
+
+.social-links a {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+	.team-member img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.team-member h3 {
+		font-size: 18px;
+	}
+
+	.social-links a {
+		font-size: 20px;
+	}
+}
+
+.bn-contact {
+	width: 100%;
+}
+
+.bn-contact>img {
+	width: 100%;
 }
